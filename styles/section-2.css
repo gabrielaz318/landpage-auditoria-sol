@@ -1,0 +1,135 @@
+/***********************/
+/** ESTILO DA SEÇÃO 2 **/
+/***********************/
+
+#section-2 {
+    margin: -2vh 0;
+    min-height: 98vh;
+    z-index: 180;
+    position: relative;
+}
+
+#section-2 .container-about {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+#section-2 .container-about .subtitle {
+    color: var(--orange-medium);
+    font-weight: 600;
+}
+
+#section-2 .container-about .subtitle {
+    color: var(--orange-medium);
+    font-weight: 600;
+    font-size: 1.05em;
+}
+
+#section-2 .container-about .title {
+    color: var(--text-blue);
+    font-weight: 600;
+    font-size: 1.4em;
+    margin-top: -4px;
+}
+
+#section-2 .profile .photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: hidden;
+    border: #e08c5488 solid 4px;
+    border-radius: 50%;
+    width: 230px;
+    margin: 0 auto;
+    margin-top: 60px;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform .4s ease-in-out, -webkit-box-shadow .4s ease-in-out;
+    transition: -webkit-transform .4s ease-in-out, -webkit-box-shadow .4s ease-in-out;
+    -o-transition: transform .4s ease-in-out, box-shadow .4s ease-in-out;
+    transition: transform .4s ease-in-out, box-shadow .4s ease-in-out;
+    transition: transform .4s ease-in-out, box-shadow .4s ease-in-out, -webkit-transform .4s ease-in-out, -webkit-box-shadow .4s ease-in-out;
+}
+
+#section-2 .profile .photo:hover {
+    -webkit-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+            transform: translateY(-30px);
+    -webkit-box-shadow: 0 40px 30px #33333333;
+            box-shadow: 0 40px 30px #33333333;
+}
+
+#section-2 .profile .photo img {
+    width: 230px;
+    margin: 0 auto;
+}
+
+#section-2 .profile .role {
+    font-weight: 700;
+    font-size: 1.4em;
+    margin-top: 12px;
+    text-align: center;
+    color: var(--text-blue);
+}
+
+#section-2 .profile .descriptions {
+    font-size: 1.3em;
+    margin: 32px auto;
+    margin-bottom: 0;
+    text-align: center;
+    color: var(--text-blue);
+    width: 70%;
+}
+
+#section-2 .profile .descriptions p:nth-child(1) .title, #section-2 .profile .descriptions p:nth-child(1) .title span {
+    font-weight: 600;
+}
+
+#section-2 .profile .descriptions p:nth-child(2) {
+    margin-top: 24px;
+}
+
+.circle-2 {
+    position: absolute;
+    top: 80px;
+    left: -250px;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    border: var(--circle-background) solid 40px;
+    background-color: transparent;
+    z-index: -1;
+}
+
+
+
+
+/*******************/
+/** MEDIA QUERIES **/
+/*******************/
+
+@media (max-width: 600px) {
+    #section-2 .profile .photo {
+        width: 190px;
+    }
+    #section-2 .profile .photo img {
+        width: 190px;
+    }
+    #section-2 .profile .role {
+        font-size: 1.3em;
+    }
+    #section-2 .profile .descriptions {
+        font-size: 1.1em;
+    }
+}

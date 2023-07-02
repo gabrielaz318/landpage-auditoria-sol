@@ -1,0 +1,30 @@
+/************************/
+/** TODAS AS ANIMAÇÕES **/
+/************************/
+
+@keyframes circlesMovimentTop {
+    from {
+        transform: translateY(50px);
+    }
+    to {
+        transform: translateY(-50px);
+    }
+}
+
+@keyframes circlesMovimentBottom {
+    from {
+        transform: translateY(-50px);
+    }
+    to {
+        transform: translateY(50px);
+    }
+}
+
+@keyframes modalFade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}

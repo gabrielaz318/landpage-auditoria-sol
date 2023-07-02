@@ -1,0 +1,114 @@
+/***********************/
+/** ESTILO DA SEÇÃO 6 **/
+/***********************/
+
+#section-6-border {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--gradient-dark)), to(var(--gradient-light)));
+    background-image: -o-linear-gradient(left, var(--gradient-dark), var(--gradient-light));
+    background-image: linear-gradient(to right, var(--gradient-dark), var(--gradient-light));
+    background-position: bottom;
+    background-size: 100% 4px; /* Ajuste a altura da borda aqui */
+    background-repeat: no-repeat;
+}
+
+#section-6 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 14px 24px;
+}
+
+#section-6 .left-items .title {
+    font-weight: bolder;
+    cursor: pointer;
+    width: fit-content;
+}
+
+#section-6 .left-items .title span {
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#section-6 .left-items p {
+    font-weight: 600;
+}
+
+#section-6 .right-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+#section-6 .right-items .icons {
+    margin-bottom: -1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 12px;
+}
+
+#section-6 .right-items .icons img {
+    cursor: pointer;
+    -webkit-transition: -webkit-transform .3s ease;
+    transition: -webkit-transform .3s ease;
+    -o-transition: transform .3s ease;
+    transition: transform .3s ease;
+    transition: transform .3s ease, -webkit-transform .3s ease;
+}
+
+#section-6 .right-items .icons img:hover {
+    -webkit-transform: scale(1.08);
+        -ms-transform: scale(1.08);
+            transform: scale(1.08);
+}
+
+#section-6 .right-items p {
+    font-weight: 600;
+}
+
+
+
+
+/*******************/
+/** MEDIA QUERIES **/
+/*******************/
+
+@media (max-width: 700px) {
+    #section-6 .left-items .title {
+        font-size: 1.3em;
+    }
+    #section-6 .right-items {
+        padding-right: 10px;
+    }
+    #section-6 .left-items p {
+        font-size: .9em;
+    }
+    #section-6 .right-items p {
+        font-size: .9em;
+    }
+}
+
+@media (max-width: 630px) {
+    #section-6 .right-items p {
+        display: none;
+    }
+}

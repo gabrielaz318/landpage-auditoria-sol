@@ -1,0 +1,102 @@
+/***********************/
+/** ESTILO DA SEÇÃO 5 **/
+/***********************/
+
+#section-5-bg {
+    background-image: -webkit-gradient(linear, right top, left bottom, from(var(--gradient-light)), to(var(--gradient-dark)));
+    background-image: -o-linear-gradient(top right, var(--gradient-light), var(--gradient-dark));
+    background-image: linear-gradient(to bottom left, var(--gradient-light), var(--gradient-dark));
+}
+
+#section-5 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 24px 0;
+    overflow: hidden;
+}
+
+#section-5 h3 {
+    color: var(--white);
+    font-weight: bolder;
+    text-align: center;
+    font-size: 1.6em;
+    width: calc(100% - 30% - 1px);
+    z-index: 2;
+}
+
+#section-5 .button-white {
+    margin-top: 24px;
+    display: inline-block;
+    background-color: var(--white);
+    border-radius: 50px;
+    padding: 12px 32px 11px 32px;
+    cursor: pointer;
+    z-index: 2;
+    -webkit-transition: -webkit-box-shadow .3s ease-in-out, -webkit-transform .3s ease-in-out, -webkit-filter .2s ease-in-out;
+    transition: -webkit-box-shadow .3s ease-in-out, -webkit-transform .3s ease-in-out, -webkit-filter .2s ease-in-out;
+    -o-transition: box-shadow .3s ease-in-out, transform .3s ease-in-out, filter .2s ease-in-out;
+    transition: box-shadow .3s ease-in-out, transform .3s ease-in-out, filter .2s ease-in-out;
+    transition: box-shadow .3s ease-in-out, transform .3s ease-in-out, filter .2s ease-in-out, -webkit-box-shadow .3s ease-in-out, -webkit-transform .3s ease-in-out, -webkit-filter .2s ease-in-out;
+}
+
+#section-5 .button-white:hover {
+    -webkit-filter: brightness(.95);
+            filter: brightness(.95);
+    -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+            transform: translateY(-10px);
+    -webkit-box-shadow: 0 20px 16px #33333333;
+            box-shadow: 0 20px 16px #33333333;
+}
+
+#section-5 .button-white p {
+    font-weight: 500;
+    font-size: 1.23em;
+    cursor: pointer;
+    color: var(--orange-dark);
+}
+
+.circle-8 {
+    position: absolute;
+    bottom: -450px;
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    border: var(--circle-gradient) solid 70px;
+    background-color: transparent;
+    z-index: 1;
+}
+
+
+
+
+/*******************/
+/** MEDIA QUERIES **/
+/*******************/
+
+@media (max-width: 700px) {
+    #section-5 h3 {
+        font-size: 1.3em;
+    }
+    #section-5 .button-white p {
+        font-size: 1.13em;
+    }
+}
+
+@media (max-width: 550px) {
+    #section-5 h3 {
+        font-size: 1.15em;
+    }
+    #section-5 .button-white p {
+        font-size: 1em;
+    }
+}
